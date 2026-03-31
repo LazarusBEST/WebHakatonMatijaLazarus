@@ -1,0 +1,197 @@
+html {
+    font-size: 1rem;
+}
+
+:root {
+    --primary: #4F46E5;     
+    --secondary: #06B6D4;    
+    --accent: #F59E0B;       
+    --bg-body: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --header-bg: #FFFFFF;
+    --shadow: 0 0.625rem 0.9375rem -0.1875rem rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+    --bg-body: #0F172A;
+    --bg-card: #1E293B;
+    --text-main: #F1F5F9;
+    --text-muted: #94A3B8;
+    --header-bg: #1E293B;
+    --primary: #818CF8;
+    --shadow: 0 0.625rem 0.9375rem -0.1875rem rgba(0, 0, 0, 0.4);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--header-bg);
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+nav a {
+    color: var(--text-main);
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.toggle-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 1.25rem;
+}
+
+footer {
+    padding: 1.875rem 10%;
+    background: var(--header-bg);
+    border-top: 0.0625rem solid rgba(0,0,0,0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.footer-left p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.9375rem;
+    margin-top: 0.9375rem;
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--bg-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+    transform: translateY(-0.3125rem) scale(1.1);
+    color: white;
+}
+
+.insta:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); }
+.fb:hover { background: #1877F2; }
+.yt:hover { background: #FF0000; }
+.x-twitter:hover { background: #000000; }
+.linkedin:hover { background: #0077B5; }
+
+.programi-section {
+    padding: 3.75rem 7%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.1rem; 
+    margin-bottom: 3rem; 
+    color: var(--primary);
+}
+
+.programi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 75rem; 
+    margin: 0 auto; 
+    gap: 3rem 4.375rem;
+}
+
+.program-card {
+    background: var(--bg-card);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    padding-bottom: 1.375rem;
+    transition: transform 0.3s ease;
+    max-width: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.program-card:hover {
+    transform: translateY(-0.6rem);
+}
+
+.program-card img {
+    width: 100%;
+    height: 15rem; 
+    object-fit: cover;
+    border-bottom: 0.0625rem solid #ddd;
+}
+
+.program-card h3 {
+    margin: 0.9375rem 0 0.625rem;
+    font-size: 1.3rem; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.46875rem 0.9375rem;
+    margin-top: auto;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 1.6rem;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent);
+}

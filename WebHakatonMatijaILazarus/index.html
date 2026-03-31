@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Školica NOVA - Programiranje za decu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skript.js" defer></script>
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <h1><span>Školica programiranja i robotike NOVA</h1>
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="programi.html">Programi</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="galerija.html">Galerija</a>
+            <button class="toggle-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Budućnost počinje ovde.</h2>
+        <p>Nauči da kreiraš svoje igrice i upravljaš robotima kroz zabavne projekte.</p>
+        <a href="kontakt.html" id="dugmeP">Kontaktiraj nas</a>
+    </section>
+
+    <section class="section">
+        <h3>Šta učimo u školici?</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="slike/programiranje.png" alt="Kodiranje">
+                <div class="content">
+                    <h4>Programiranje</h4>
+                    <p>Učimo Scratch, Python i JavaScript kroz razvoj video igrica prilagođenih uzrastu.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="slike/RobotskaRuka.png" alt="Robotika">
+                <div class="content">
+                    <h4>Robotika</h4>
+                    <p>Sklapanje LEGO robota i Arduino sistema. Oživi svoje kreacije kodom!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="slike/AmerickiGang.png" alt="Edukacija">
+                <div class="content">
+                    <h4>Logičko razmišljanje</h4>
+                    <p>Razvijamo kritičko razmišljanje i rešavanje problema koje pomaže i u školi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="benefit-item">
+            <span>🚀</span>
+            <h4 id="benefiti-teks">100+ Prokata</h4>
+            <p id="benefiti-teks">Napravljenih igrica i robota.</p>
+        </div>
+        <div class="benefit-item">
+            <span>🎓</span>
+            <h4 id="benefiti-teks">Sertifikati</h4>
+            <p id="benefiti-teks">Priznata diploma nakon svakog nivoa.</p>
+        </div>
+        <div class="benefit-item">
+            <span>👥</span>
+            <h4 id="benefiti-teks">Male grupe</h4>
+            <p id="benefiti-teks">Posvećenost svakom detetu (max 8 polaznika).</p>
+        </div>
+    </section>
+
+    <section class="team-section">
+    <div class="section-header">
+        <h3>Naš stručni tim</h3>
+        <p>12 entuzijasta koji deci otvaraju vrata digitalnog sveta</p>
+    </div>
+
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Nikola.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Nikola Perić</h4><span class="role">Vlasnik</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Miroslav.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Miroslav Antić</h4><span class="role">Profesor paytona</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Milka.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Milka Jovanović</h4><span class="role">Profesorka jupajtera</span></div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Stojadin.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Stojadin Morosavljević</h4><span class="role">Profesor scratch juniora</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Petar.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Petar Nikić</h4><span class="role">Profesor paytona</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Zarko.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Žarko Blagosavljević</h4><span class="role">Profesor scratcha</span></div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Jones(Djole).jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Jones(Djole) Milovanović</h4><span class="role">Profesor robotike</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Zorica.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Zorica Pavlović</h4><span class="role">Psiholog</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Igor.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Igor Filipović</h4><span class="role">Profesor programa za mobilne aplikacije</span></div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Vojislav.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Vojislav Djuić</h4><span class="role">Profesor web dizajna</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Dragoslav.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Dragoslav Pavlović</h4><span class="role">Python Master Mind</span></div>
+        </div>
+        <div class="team-card">
+            <div class="team-img-container">
+                <img src="slike/Svetislava.jpg" alt="Instruktor">
+                <div class="hover-overlay"><div class="social-icons-team"><a href="#"><i class="fab fa-linkedin-in"></i></a></div></div>
+            </div>
+            <div class="team-details"><h4>Svetislava Krstić</h4><span class="role">Profesor logičkog razmišljanja</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="section contact-section">
+        <h3>Prijavite se za besplatan probni čas</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Ime roditelja" required>
+                <input type="email" placeholder="Vaš Email" required>
+                    <select>
+                        <option>Izaberi kurs...</option>
+                        <option>Programiranje</option>
+                        <option>Robotika</option>
+                    </select>
+                <button type="submit" id="buttonprijava">Pošalji prijavu</button>
+            </form>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; Školica programiranja i robotike NOVA. Sva prava zadržana.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon insta">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon fb">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC7V7SYx_UZA2ujOjvvGEC2A" target="_blank" rel="noopener noreferrer" class="social-icon yt">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-icon x-twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

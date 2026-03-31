@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Školica NOVA - Programiranje za decu</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <script src="skript k3.js" defer></script>
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><span>Školica programiranja i robotike NOVA</h1>
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="programi.html">Programi</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="galerija.html">Galerija</a>
+            <button class="toggle-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <section id="kontakt" class="section contact-section">
+        <h3>Prijavite se za besplatan probni čas</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Ime roditelja" required>
+                <input type="email" placeholder="Vaš Email" required>
+                    <select>
+                        <option>Izaberi kurs...</option>
+                        <option>Programiranje</option>
+                        <option>Robotika</option>
+                    </select>
+                <button type="submit" id="buttonprijava">Pošalji prijavu</button>
+            </form>
+    </section>
+
+    <div class="contact-details">
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+                <p class="label">Adresa</p>
+                <p class="value">Bulevar Kralja Aleksandra 123, Beograd</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+                <p class="label">Telefon</p>
+                <p class="value">+381 11 123 4567</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <p class="label">Email</p>
+                <p class="value">info@skolicanova.rs</p>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.5!2d20.4!3d44.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ4JzAwLjAiTiAyMMKwMjQnMDAuMCJF!5e0!3m2!1ssr!2srs!4v123456789" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>  
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Školica programiranja i robotike NOVA. Sva prava zadržana.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon fb">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UC7V7SYx_UZA2ujOjvvGEC2A" target="_blank" rel="noopener noreferrer" class="social-icon yt">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-icon x-twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
